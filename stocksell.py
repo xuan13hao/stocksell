@@ -46,7 +46,9 @@ def findMaxSubArray(A, low, high):
 
 
 if __name__ == '__main__':
-    A = [200, 500, 1000, 700, 30, 400, 900, 400, 50]
+    #data from Introduction to algorithms-3rd page 68
+    A = [100, 113, 110, 85, 105, 102, 86, 63, 81, 101, 94, 106, 101, 79, 94, 90, 97]
+    #Subtract two adjacent values in the original array to get a difference array B
     B = []
     for n in range(1, len(A)):
        B.append(A[n] - A[n-1])
